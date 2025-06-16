@@ -37,3 +37,4 @@ module tt_um_equipo7 (
     assign uio_oe  = 8'b0;
 
 endmodule
+ 
