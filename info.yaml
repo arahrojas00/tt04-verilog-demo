@@ -24,7 +24,7 @@ documentation:
       utiliza un reloj externo.
 
   how_to_test: |
-      Asigna datos a ui_in[7:3], pon ui_in[1] = 1 (start), y ui_in[0] = 0 (reset). 
+      Asigna datos a ui_in[7:3], pon ui_in[1] = 1 (start), y ui_in[0] = 0 (reset).  
       El resultado recibido aparecerá en uo_out[7:0].
 
   inputs:
