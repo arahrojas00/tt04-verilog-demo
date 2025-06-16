@@ -32,7 +32,7 @@ jobs:
 
     - name: upload vcd
       if: success() || failure()
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v3
       with:
           name: test-vcd
           path: src/tb.vcd
