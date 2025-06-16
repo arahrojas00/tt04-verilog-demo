@@ -1,31 +1,28 @@
----
+
 # TinyTapeout project information
 project:
   wokwi_id: 0
-
   source_files:
     - tt_um_equipo7.v
   top_module: "tt_um_equipo7"
-
   tiles: "1x1"
-
 yaml_version: 4
 
 documentation:
-  author:       "Arah Rojas Blanco"
-  title:        "UART TX/RX UARTComplete FSM"
-  language:     "Verilog"
-  description:  "Transmisor y receptor UART asíncrono usando máquinas de estados finitos."
+  author: "Arah Rojas Blanco"
+  title: "UART TX/RX UARTComplete FSM"
+  language: "Verilog"
+  description: "Transmisor y receptor UART asíncrono usando máquinas de estados finitos."
 
   how_it_works: |
-      Este diseño implementa un transmisor y receptor UART utilizando máquinas de estados finitos.
-      El módulo transmite un byte serialmente en base a un pulso de inicio (start) y luego lo reconstruye
-      en el receptor bit por bit. Está adaptado para funcionar con los pines GPIO de TinyTapeout y
-      utiliza un reloj externo.
+    Este diseño implementa un transmisor y receptor UART utilizando máquinas de estados finitos.
+    El módulo transmite un byte serialmente en base a un pulso de inicio (start) y luego lo reconstruye
+    en el receptor bit por bit. Está adaptado para funcionar con los pines GPIO de TinyTapeout y
+    utiliza un reloj externo.
 
   how_to_test: |
-      Asigna datos a ui_in[7:3], pon ui_in[1] = 1 (start), y ui_in[0] = 0 (reset).  
-      El resultado recibido aparecerá en uo_out[7:0].
+    Asigna datos a ui_in[7:3], pon ui_in[1] = 1 (start), y ui_in[0] = 0 (reset).
+    El resultado recibido aparecerá en uo_out[7:0].
 
   inputs:
     - reset
@@ -59,7 +56,7 @@ documentation:
 
   tag: "uart, serial, fsm, test"
   external_hw: ""
-  discord: "arahrb"  # tu handle si estás en Discord del proyecto
+  discord: "arahrb"
   doc_link: ""
   clock_hz: 10000000
   picture: ""
